@@ -1,0 +1,110 @@
+[
+    {
+        "id":1,
+        "img":"https://i.ibb.co/0BPs5Ds/1.jpg",
+        "name":"Bazaj city 2019",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":600,
+        "review":4.5,
+        "stock":10
+    },
+    {
+        "id":2,
+        "img":"https://i.ibb.co/yh5SBgj/2.jpg",
+        "name":"Suzuki G5",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":1000,
+        "review":4.5,
+        "stock":13
+    },
+    {
+        "id":3,
+        "img":"https://i.ibb.co/x1c5tTg/3.jpg",
+        "name":"Honda H4 150cc ",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":800,
+        "review":4.7,
+        "stock":15
+    },
+    {
+        "id":4,
+        "img":"https://i.ibb.co/1QqnkzX/4.jpg",
+        "name":"Yamaha motor Taiwan",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":600,
+        "review":4.2,
+        "stock":23
+    },
+    {
+        "id":5,
+        "img":"https://i.ibb.co/Y7xyMqs/5.jpg",
+        "name":"Tvs grand 150cc",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":900,
+        "review":4,
+        "stock":21
+    },
+    {
+        "id":6,
+        "img":"https://i.ibb.co/CV9yqjW/6.jpg",
+        "name":"KTM faster 300cc",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":1700,
+        "review":3.9,
+        "stock":26
+    },
+    {
+        "id":7,
+        "img":"https://i.ibb.co/d6G0TFW/7.jpg",
+        "name":"Benelli G6",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":1400,
+        "review":4.6,
+        "stock":8
+    },
+    {
+        "id":8,
+        "img":"https://i.ibb.co/zXMzQ4H/An-attractive-young-woman-holding-a-helmet-and-preparing-to-ride-her-scooter-through-the-city.jpg",
+        "name":"Suzuki Giczer",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":800,
+        "review":4.5,
+        "stock":3
+    },
+    {
+        "id":9,
+        "img":"https://i.ibb.co/pJ1bZ1j/A-custom-black-motorcycle-against-a-plain-white-background-The-motorcycle-is-shown-from-the-side-and.jpg",
+        "name":"Bosshoss cycles",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":1000,
+        "review":4.8,
+        "stock":8
+    },
+    {
+        "id":10,
+        "img":"https://i.ibb.co/fSrGLm9/10.jpg",
+        "name":"Royel Enfield",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":1300,
+        "review":4.1,
+        "stock":12
+    },
+    {
+        "id":11,
+        "img":"https://i.ibb.co/YTMvY05/11.jpg",
+        "name":"Dukati Fg 30",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":1200,
+        "review":5,
+        "stock":13
+    },
+    {
+        "id":12,
+        "img":"https://i.ibb.co/gyDPWNh/12.jpg",
+        "name":"BMW ",
+        "discription":"here are many systems for classifying types of motorcycles, describing how the motorcycles are put to use, or the designer's intent, or some combination of the two.[1] Six main categories are widely recognized: cruiser, sport, touring, standard, dual-purpose, and dirt bike.[2][3][4][5] Sometimes sport touring motorcycles are recognized as a seventh category.[1] Strong lines are sometimes drawn between motorcycles and their smaller cousins, mopeds, scooters, and underbones,[6] but other classification schemes include these as types of motorcycles.There is no universal system for classifying all types of motorcycles. There are strict classification systems enforced by competitive motorcycle sport sanctioning bodies, or legal definitions of a motorcycle established by certain legal jurisdictions for motorcycle registration, emissions, road traffic safety rules or motorcyclist licensing. There are also informal classifications or nicknames used by manufacturers, riders, and the motorcycling media. Some experts do not recognize sub-types, like naked bike, that purport to be classified outside the six usual classes, because they fit within one of the main types and are recognizable only by cosmetic changes",
+        "price":2000,
+        "review":4.9,
+        "stock":9
+    }
+]

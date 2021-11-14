@@ -7,7 +7,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/orders')
+        fetch('https://protected-island-07289.herokuapp.com/orders')
         .then(res=>res.json())
         .then(data=>{
             setOrders(data)
@@ -15,19 +15,21 @@ const ManageAllOrders = () => {
     },[]);
 
     const handleDelelte= (id)=>{
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://protected-island-07289.herokuapp.com/orders/${id}`;
         fetch(url,{
             method:'DELETE'
         })
         .then(res=>res.json())
         .then(data=>{
             if(data.deletedCount> 0){
-                const remaining = orders.filter(order=> order._id == id);
+                const remaining = orders.filter(order=> order._id !== id);
                 setOrders(remaining)
                 alert('successfully deleted')
             }
         })
     }
+
+   
 
     return (
         <div>

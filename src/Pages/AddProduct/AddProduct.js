@@ -22,7 +22,7 @@ const AddProduct = () => {
 
         const newProduct= { id: id, price:price, name: name, img:img, discription: discription, stock:stock, 
             review:review }
-        fetch('http://localhost:5000/products', {
+        fetch('https://protected-island-07289.herokuapp.com/products', {
             method: "POST", 
             headers:{
                 "content-Type":"application/json"

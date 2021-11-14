@@ -16,7 +16,7 @@ const ProductDetails = () => {
 
     console.log(product)
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://protected-island-07289.herokuapp.com/products')
         .then(res=>res.json())
         .then(data=>{
             setProduct(data)
@@ -36,7 +36,7 @@ console.log(singleProduct)
         let address= addressRef.current.value; 
        const orderDetails = {name:name, email:email, phone:phone,address:address , singleProduct:singleProduct}
 
-       axios.post('http://localhost:5000/orders', orderDetails )
+       axios.post('https://protected-island-07289.herokuapp.com/orders', orderDetails )
        .then(res=> {
            if(res.data.insertedId){
             alert('successfully user added')

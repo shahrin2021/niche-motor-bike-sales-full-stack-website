@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import firebaseInitialize from "../Firebase/Firebase.initialize"
-import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword,signOut,onAuthStateChanged ,updateProfile  } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword,signOut,onAuthStateChanged ,updateProfile ,getIdToken } from "firebase/auth";
 
 firebaseInitialize()
 
@@ -9,7 +9,7 @@ const useFirebase= ()=>{
     const [isLoading, setIsLoading] = useState(true);
     const [error , setError]=  useState('');
     const [admin, setAdmin]=useState(false)
-    
+    const [token , setToken] = useState('')
     const auth = getAuth();
 
     const registerUser = (email, password,name,history)=>{
@@ -44,7 +44,11 @@ const useFirebase= ()=>{
     useEffect(()=>{
         const unsubscrib= onAuthStateChanged (auth, (user)=>{
             if(user){
-                setUser(user)
+                setUser(user);
+                getIdToken(user)
+                .then(idToken=>{
+                    setToken(idToken)
+                })
             }else{
                 setUser({})
             }
@@ -120,7 +124,7 @@ const useFirebase= ()=>{
     // call all product 
    
 
-    return {user , error ,admin, isLoading ,handleSingOut ,handleLoginGmailPassword,registerUser}
+    return {user , token ,error ,admin, isLoading ,handleSingOut ,handleLoginGmailPassword,registerUser}
 
 }
 

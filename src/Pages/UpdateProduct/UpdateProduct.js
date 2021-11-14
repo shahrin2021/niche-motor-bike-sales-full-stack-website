@@ -9,7 +9,7 @@ const UpdateProduct = () => {
     
     console.log(product)
     useEffect(()=>{
-         fetch(`http://localhost:5000/products/${id}`)
+         fetch(` https://protected-island-07289.herokuapp.com/products/${id}`)
          .then(res=>res.json())
          .then(data=>{
             setProduct(data)
@@ -47,7 +47,7 @@ const UpdateProduct = () => {
 
     const handleSubmit = e=>{
 
-        const url = `http://localhost:5000/products/${id}`;
+        const url = ` https://protected-island-07289.herokuapp.com/products/${id}`;
         fetch(url ,{
             method: 'PUT',
             headers:{
@@ -80,7 +80,7 @@ const UpdateProduct = () => {
                    </div>
 
                     <div>
-                        <input onChange={handlePriceChange}  value={product.price || ''} className='d-block w-75 p-1 mb-3 mx-auto'type="number"  placeholder='price' />
+                        <input onChange={handlePriceChange}  value ={product.price || ''} className='d-block w-75 p-1 mb-3 mx-auto'type="number"  placeholder='price' />
                     </div>
                     <div>
                         <input onChange={handleImgLinkChange} value={product.img || ''} className='d-block w-75 p-1 mb-3 mx-auto'type="text"   placeholder='Img url' />

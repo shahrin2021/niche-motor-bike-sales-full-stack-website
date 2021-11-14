@@ -1,12 +1,13 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
 import { Alert, Container, Form } from 'react-bootstrap';
+import useAuth from '../../Hooks/useAuth';
 import './MakeAdmin.css'
 
 const MakeAdmin = () => {
     const [email, setEmail]= useState('');
     const [success, setSuccess] = useState(false);
-
+    const {token} = useAuth()
     const handleOnBlur= e=>{
         const value = e.target.value;
         setEmail(value)
@@ -15,9 +16,10 @@ const MakeAdmin = () => {
 
     const handleSubmit = e=>{
         const user={email};
-        fetch('http://localhost:5000/users/admin',{
+        fetch(' https://protected-island-07289.herokuapp.com/users/admin',{
             method:'PUT',
             headers:{
+                'authorization':`Bearer ${token}`,
                 'content-type':'application/json'
             },
             body:JSON.stringify(user)

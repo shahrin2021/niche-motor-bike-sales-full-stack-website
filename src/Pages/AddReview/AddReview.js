@@ -14,10 +14,10 @@ const AddReview = () => {
         const email= emailRef.current.value;
         const review =reviewRef.current.value;
         const star = starRef.current.value;
-
+       
         const newReview = {  name: name , email: email, review:review ,star:star }  
             
-        fetch('http://localhost:5000/reviews', {
+        fetch(' https://protected-island-07289.herokuapp.com/reviews', {
             method: "POST", 
             headers:{
                 "content-Type":"application/json"

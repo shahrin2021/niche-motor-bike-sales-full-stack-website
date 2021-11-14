@@ -1,0 +1,22 @@
+
+.contact-form-area{
+    border: 1px solid rgb(255, 214, 214);
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(255, 214, 214);
+    border-radius: 10px;
+}
+
+.conatct-container{
+    margin: 50px 0;
+}
+.contact-title{
+    font-size: 40px;
+    color: hsl(266, 82%, 38%);
+}
+
+.contact-btn{
+    font-size: 18px;
+   font-weight: 400;
+}
+

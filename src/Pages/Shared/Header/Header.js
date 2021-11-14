@@ -1,7 +1,7 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Container, Nav, Navbar, Spinner } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import logo from '../../../image/logo (1).png'
 
@@ -16,7 +16,7 @@ const Header = () => {
 }
     return (
         <div>
-             <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
+             <Navbar  collapseOnSelect expand="lg" bg="primary" variant="dark">
     <Container>
     <Navbar.Brand href="#home">
       <img src={logo} alt="" /> 
@@ -24,17 +24,23 @@ const Header = () => {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link as={Link} to="/home">Home</Nav.Link>
-      <Nav.Link as={Link} to="/product">Bikes</Nav.Link>
-      <Nav.Link as={Link} to="/orderreview">My order</Nav.Link>
-      <Nav.Link as={Link} to="manageorder">All order</Nav.Link>
+      <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/home">Home</Nav.Link>
+      <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/products">Bikes</Nav.Link>
+      <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/contact">Contact</Nav.Link>
+     
+      
+     
       
     </Nav>
     {
-      user.email && <h2 className="text-white">{user.name}</h2>
+      user.email && <p className="text-white m-0">{user?.email}</p>
     }
     {
-      user.email ? <Button onClick={handleSingOut}>Logout</Button>:<Nav.Link as={Link} to="/login">Login</Nav.Link>
+      user.email && <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/dashboard">Dashboard</Nav.Link>
+    }
+
+    {
+      user.email ? <Button className='btn btn-warning' onClick={handleSingOut}>Logout</Button>:<NavLink  to="/login"><Button className='btn btn-danger'>Login</Button></NavLink>
     }
     </Navbar.Collapse>
     

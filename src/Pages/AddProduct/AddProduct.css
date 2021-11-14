@@ -1,0 +1,36 @@
+.form-area form input {
+    display: block;
+    width: 100% ;
+    margin-bottom: 10px;
+    
+}
+.service-add-form{
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+   
+}
+
+.form-area form textarea{
+    display: block;
+    width: 100% ;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.form-area{
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: rgb(230, 221, 208);
+   
+}
+
+.input-btn{
+    width: 140px;
+    background-color: rgb(233, 70, 11);
+    margin-top: 30px !important;
+    font-size: 20px;
+    color: #ffff;
+}

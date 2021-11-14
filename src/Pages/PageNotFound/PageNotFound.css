@@ -1,0 +1,17 @@
+.pageStyle{
+    max-width: 600px;
+    border: 1px solid #47DDD6;
+    background-color: #47DDD6;
+    padding: 50px;
+}
+
+.pagenotFound-area{
+    background-image: url(../../image//pageanotfount.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

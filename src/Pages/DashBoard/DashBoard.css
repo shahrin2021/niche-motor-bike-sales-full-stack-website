@@ -1,0 +1,20 @@
+.dashboard-header{
+    border: 1px solid #003cff;
+    background-color: #003cff;
+    margin-top: 20px;
+    padding:15px 10px;
+    border-radius: 8px;
+}
+
+.dash-heading h5{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.dash-icon{
+    font-size: 20px;
+} 
+
+.dashBtn{
+    font-size: 20px;
+}

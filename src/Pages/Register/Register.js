@@ -1,6 +1,6 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
-import { Container, Form } from 'react-bootstrap';
+import { Alert, Container, Form } from 'react-bootstrap';
 import { NavLink ,useHistory } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 
@@ -34,9 +34,9 @@ const Register = () => {
                 <h3 >Please Register</h3>
                 <Form onSubmit={onHandleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Your name</Form.Label>
                 <Form.Control 
-                onBlur={handleOnBlur}
+                onChange={handleOnBlur}
                 type="text"
                 name="name"
                 placeholder="your Name" />
@@ -45,7 +45,7 @@ const Register = () => {
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control 
-                onBlur={handleOnBlur}
+                onChange={handleOnBlur}
                 type="email"
                 name="email"
                 placeholder="Enter email" />
@@ -57,7 +57,7 @@ const Register = () => {
                 <Form.Control 
                 type="password"
                 name="password"
-                onBlur={handleOnBlur}
+                onChange={handleOnBlur}
                 placeholder="Password" />
             </Form.Group>
                 
@@ -72,6 +72,12 @@ const Register = () => {
                     </div>
                     
             </Form> 
+
+            {
+                error && <div className='mt-2'>
+                  <Alert >{error}</Alert>
+                </div>
+            }
             </div>
         </Container>
         </div>

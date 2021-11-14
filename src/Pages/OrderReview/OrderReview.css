@@ -1,0 +1,21 @@
+.order-header{
+    border: 1px solid sienna;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.order-heading{
+
+}
+
+@media (max-width:450px){
+    .order-heading {
+        font-size: 20px;
+    }
+}
+
+
+

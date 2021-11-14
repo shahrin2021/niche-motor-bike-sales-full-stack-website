@@ -1,0 +1,7 @@
+.addreview-area {
+    max-width: 800px;
+    border: 1px solid darksalmon;
+    background-color: darksalmon;
+    padding: 50px;
+    border-radius: 10px;
+}

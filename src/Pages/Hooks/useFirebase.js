@@ -7,16 +7,18 @@ firebaseInitialize()
 const useFirebase= ()=>{
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
-    const [error , setError]=  useState('')
-
+    const [error , setError]=  useState('');
+    const [admin, setAdmin]=useState(false)
+    
     const auth = getAuth();
 
     const registerUser = (email, password,name,history)=>{
         createUserWithEmailAndPassword(auth, email, password)
         .then(result=>{
-            const newUser = {email,displayName:name}
-            setUser(newUser)
-
+            const newUser = { email, displayName: name };
+            setUser(newUser);
+            console.log(newUser)
+            saveUser(email, name)
             updateProfile(auth,{
                 displayName:name
             }).then(()=>{
@@ -55,12 +57,24 @@ const useFirebase= ()=>{
        
     },[])
 
+
+    useEffect(()=>{
+        fetch(`http://localhost:5000/users/${user.email}`)
+        .then(res=> res.json())
+        .then(data=>{
+            setAdmin(data.admin)
+        })
+    },[user.email]);
+
+  
+
     const handleLoginGmailPassword= (email,password,location,history)=>{
         signInWithEmailAndPassword(auth, email, password)
         .then(result=>{
             const destination = location?.state?.from || '/home';
             history.replace(destination)
             setUser(result.user)
+            console.log(result.user)
            setError('')
         }).catch((error)=>{
             setError(error.message)
@@ -70,6 +84,7 @@ const useFirebase= ()=>{
         })
     }
 
+   
 
     
 
@@ -85,8 +100,27 @@ const useFirebase= ()=>{
         })
     };
 
+    const saveUser= (email , displayName )=>{
+        const user= {email, displayName};
+        console.log(user)
+        fetch('http://localhost:5000/users',{
+            method:'POST', 
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
 
-    return {user , error , isLoading ,handleSingOut ,handleLoginGmailPassword,registerUser}
+        }).then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+        })
+    }
+
+
+    // call all product 
+   
+
+    return {user , error ,admin, isLoading ,handleSingOut ,handleLoginGmailPassword,registerUser}
 
 }
 

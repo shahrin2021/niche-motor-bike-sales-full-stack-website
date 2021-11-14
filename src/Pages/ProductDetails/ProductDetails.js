@@ -14,18 +14,20 @@ const ProductDetails = () => {
     const phoneRef= useRef();
     const addressRef= useRef();
 
+    console.log(product)
     useEffect(()=>{
         fetch('http://localhost:5000/products')
         .then(res=>res.json())
         .then(data=>{
             setProduct(data)
+            console.log(data)
         })
     },[id])
 
 
 
-    const singleProduct= product.find(pb=>pb.id ==id)
-
+    const singleProduct= product.find(pb=>pb?._id == id)
+console.log(singleProduct)
 
     const onSubmit = (e) => {
         let name= nameRef.current.value;
@@ -38,16 +40,13 @@ const ProductDetails = () => {
        .then(res=> {
            if(res.data.insertedId){
             alert('successfully user added')
-               
+            nameRef.current.value='';
+            phoneRef.current.value='';
+            addressRef.current.value='';
            }
-           phone='';
-           address=''
+           
         })
       
-          
-
-            
-       
         e.preventDefault()
     }
 
@@ -58,7 +57,7 @@ const ProductDetails = () => {
     
    
     return (
-    <Container>
+    <Container className="mt-5">
         <Row>
             <Col lg={7}>
                 <div>
@@ -119,7 +118,7 @@ const ProductDetails = () => {
                   <input ref={phoneRef} placeholder='Phone Number' className='w-100 mb-3'  type="number" name="" id="" />
               </div>
              
-             <button className='btn btn-success'>Booking confirm</button>
+             <button className='btn btn-success'>Place Order</button>
               
           </form>
               </div>

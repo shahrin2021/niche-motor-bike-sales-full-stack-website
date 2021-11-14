@@ -1,0 +1,9 @@
+.update-form{
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd678;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: burlywood;
+}

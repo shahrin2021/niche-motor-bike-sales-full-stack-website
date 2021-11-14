@@ -1,0 +1,7 @@
+.admin-form{
+    max-width: 800px;
+    border: 1px solid silver;
+    padding: 40px;
+    background:silver ;
+    border-radius: 10px;
+}

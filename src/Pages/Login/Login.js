@@ -1,7 +1,7 @@
 import { TextField } from '@mui/material';
 import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
-import { Container, Form } from 'react-bootstrap';
+import { Alert, Container, Form } from 'react-bootstrap';
 import { NavLink ,useHistory,useLocation} from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 import './login.css'
@@ -35,7 +35,7 @@ const Login = () => {
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control 
-                onBlur={handleOnBlur}
+                onChange={handleOnBlur}
                 type="email"
                 name="email"
                 placeholder="Enter email" />
@@ -47,7 +47,7 @@ const Login = () => {
                 <Form.Control 
                 type="password"
                 name="password"
-                onBlur={handleOnBlur}
+                onChange={handleOnBlur}
                 placeholder="Password" />
             </Form.Group>
                 
@@ -62,6 +62,15 @@ const Login = () => {
                     </div>
                     
             </Form> 
+            {
+                error && <div className='mt-2'>
+                  <Alert >
+                    {error}
+    <Alert.Link href="#">an example link</Alert.Link>. Give it a click if you
+    like.
+  </Alert>
+                </div>
+            }
             </div>
         </Container>
      </div>

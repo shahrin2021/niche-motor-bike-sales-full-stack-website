@@ -24,7 +24,7 @@ const useFirebase= ()=>{
             const newUser = { email, displayName: name };
             setUser(newUser);
             console.log(newUser)
-            saveUser(email, name)
+            saveUser(email, name,'POST')
             updateProfile(auth,{
                 displayName:name
             }).then(()=>{
@@ -67,7 +67,7 @@ const useFirebase= ()=>{
     useEffect(()=>{
         const unsubscrib= onAuthStateChanged (auth, (user)=>{
             if(user){
-              
+                setUser(user)
             }else{
                 setUser({})
             }
@@ -124,11 +124,11 @@ const useFirebase= ()=>{
 
    
 
-    const saveUser= (email , displayName  )=>{
+    const saveUser= (email , displayName, method  )=>{
         const user= {email, displayName};
         console.log(user)
         fetch('https://protected-island-07289.herokuapp.com/users',{
-            method:'POST', 
+            method:method, 
             headers:{
                 'content-type': 'application/json'
             },

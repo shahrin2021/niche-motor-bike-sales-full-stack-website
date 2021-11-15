@@ -56,13 +56,14 @@ console.log(singleProduct)
     
     
    
-    return (
+    return (<div style={{marginTop:'100px'}}>
     <Container className="mt-5">
+        <h3 className='text-danger text-center mb-4'>Bike Details </h3>
         <Row>
             <Col lg={7}>
                 <div>
                     <div className='text-center'>
-                    <img src={singleProduct?.img} alt='bike'/>
+                    <img style={{maxWidth:'100%'}} src={singleProduct?.img} alt='bike'/>
                     </div>
                         <div>
                             <h4  className='text-center mt-2'>{singleProduct?.name}</h4>
@@ -127,6 +128,7 @@ console.log(singleProduct)
             </Col>
         </Row>
     </Container>
+    </div>
     );
 };
 

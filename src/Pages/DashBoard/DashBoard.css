@@ -5,6 +5,9 @@
     padding:15px 10px;
     border-radius: 8px;
 }
+.dashboard-header{
+    margin-top: 120px;
+}
 
 .dash-heading h5{
     font-size: 20px;
@@ -18,3 +21,4 @@
 .dashBtn{
     font-size: 20px;
 }
+

@@ -8,7 +8,7 @@ import './login.css'
 
 const Login = () => {
     const [loginData , setLoginData]= useState({})
-    const {user,error , isLoading ,handleLoginGmailPassword} =useAuth();
+    const {user,error , isLoading ,handleLoginGmailPassword,singInWithGoogle} =useAuth();
     const history = useHistory();
     const location= useLocation()
     const handleOnBlur = e=>{
@@ -21,13 +21,17 @@ const Login = () => {
 
     }
 
+    const handleGoogleLogin = ()=>{
+        singInWithGoogle(location,history)
+    }
+
     const onHandleSubmit= e =>{
         console.log(loginData)
         handleLoginGmailPassword(loginData.email, loginData.password , location, history)
         e.preventDefault()
     }
     return (
-    <div className="justify-content-center align-items-center d-flex" style={{height:'90vh'}}>
+    <div className="justify-content-center align-items-center d-flex margin-top" style={{height:'90vh', marginTop:'80px'}}>
         <Container>
             <div className="login-area ">
                 <h3>Please login</h3>
@@ -59,6 +63,10 @@ const Login = () => {
                     <NavLink style={{textDecoration:'none', fontSize:"20px",color: '#000'}}  to='/register'>
                 Or / Register Now     
             </NavLink>
+
+           <div className='mt-3'>
+           <Button onClick={handleGoogleLogin} className='btn btn-warning'>Signin With Google</Button>
+           </div>
                     </div>
                     
             </Form> 

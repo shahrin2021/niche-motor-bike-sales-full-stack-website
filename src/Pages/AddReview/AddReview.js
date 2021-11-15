@@ -40,9 +40,9 @@ const AddReview = () => {
     return (
         <Container>
             
-        <div className='d-flex justify-content-center align-items-center ' style={{height:'90vh'}}>
+        <div className='d-flex justify-content-center align-items-center ' style={{height:'90vh', margin:'50px 0'}}>
         <div>
-        <h2 className='text-center mb-3'>Send us your Feedback</h2>
+        <h2 className='text-center mb-5'>Send us your Feedback</h2>
             <div className='addreview-area'>
               <form onSubmit={handleSubmit}>
             <label htmlFor="">Your name</label>

@@ -7,7 +7,7 @@ import './MakeAdmin.css'
 const MakeAdmin = () => {
     const [email, setEmail]= useState('');
     const [success, setSuccess] = useState(false);
-    const {token} = useAuth()
+    
     const handleOnBlur= e=>{
         const value = e.target.value;
         setEmail(value)
@@ -19,7 +19,7 @@ const MakeAdmin = () => {
         fetch(' https://protected-island-07289.herokuapp.com/users/admin',{
             method:'PUT',
             headers:{
-                'authorization':`Bearer ${token}`,
+                
                 'content-type':'application/json'
             },
             body:JSON.stringify(user)

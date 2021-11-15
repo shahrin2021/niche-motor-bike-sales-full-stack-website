@@ -28,7 +28,7 @@ const Register = () => {
         e.preventDefault()
     }
     return (
-        <div className='d-flex justify-content-center align-items-center' style={{height:'90vh'}}>
+        <div className='d-flex justify-content-center align-items-center' style={{height:'90vh', marginTop:'80px'}}>
              <Container>
             <div className="register-area ">
                 <h3 >Please Register</h3>

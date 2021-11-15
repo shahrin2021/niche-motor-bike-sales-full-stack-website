@@ -18,6 +18,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import OrderReview from './Pages/OrderReview/OrderReview';
 import UpdateProduct from './Pages/UpdateProduct/UpdateProduct';
 import AdminRoute from './Pages/PrivateRoute/AdminRoute/AdminRoute';
+import Blogs from './Pages/Home/Blogs/Blogs';
+import Services from './Pages/Services/Services';
 
 
 
@@ -35,6 +37,9 @@ function App() {
         <Route  path= '/home'>
         <Home></Home>
         </Route>
+        <Route  path= '/blog'>
+        <Blogs></Blogs>
+        </Route>
         <Route  path= '/login'>
         <Login></Login>
         </Route>
@@ -45,13 +50,16 @@ function App() {
         <Contact></Contact>
         </Route>
         <Route exact path= '/products'>
-        <Products></Products>
+        <Services/>
         </Route>
         <Route  path= '/register'>
         <Register></Register>
         </Route>
         <PrivateRoute path= '/dashboard'>
         <DashBoard></DashBoard>
+        </PrivateRoute>
+        <PrivateRoute path= '/review'>
+        <AddReview></AddReview>
         </PrivateRoute>
         <PrivateRoute  path='/product/:id'>
         <ProductDetails></ProductDetails>

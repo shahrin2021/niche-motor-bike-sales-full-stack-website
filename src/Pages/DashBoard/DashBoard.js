@@ -36,7 +36,7 @@ const DashBoard = () => {
         
     }
     return (
-        <div>
+        <div className='dashboard-area' >
     
     <Container>
         <div >
@@ -52,8 +52,8 @@ const DashBoard = () => {
         
       </div>
 
-      <Offcanvas style={{width:'240px'}} show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
+      <Offcanvas  style={{width:'240px'}} show={show} onHide={handleClose}>
+        <Offcanvas.Header className='margin-top{' style={{width:'240px'}} closeButton>
           <Offcanvas.Title>DASHBOARD</Offcanvas.Title>
           <h6>{user.displayName}</h6>
         </Offcanvas.Header>
@@ -62,10 +62,10 @@ const DashBoard = () => {
          <NavLink style={{textDecoration:'none',fontSize:'20px',color:'#000'}} to='/home'> <i className="uil uil-home me-2"></i>Home</NavLink>
          </div>
          <div>
-         <NavLink style={{textDecoration:'none',fontSize:'20px',color:'#000'}} to={`${url}/myorder`}> <i class="uil uil-shop me-2"></i>My Order</NavLink>
+         <NavLink style={{textDecoration:'none',fontSize:'20px',color:'#000'}} to={`${url}/myorder`}> <i className="uil uil-shop me-2"></i>My Order</NavLink>
          </div>
          <div>
-         <NavLink style={{textDecoration:'none',fontSize:'20px',color:'#000'}} to={`${url}/pay`}> <i class="uil uil-shopping-cart-alt me-2"></i>Pay</NavLink>
+         <NavLink style={{textDecoration:'none',fontSize:'20px',color:'#000'}} to={`${url}/pay`}> <i className="uil uil-shopping-cart-alt me-2"></i>Pay</NavLink>
          </div>
          <div>
          <NavLink style={{textDecoration:'none',fontSize:'20px',color:'#000'}} to={`${url}/review`}> <i className="uil uil-message me-2"></i>Review us</NavLink>

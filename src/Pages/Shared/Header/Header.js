@@ -4,10 +4,10 @@ import { Container, Nav, Navbar, Spinner } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import logo from '../../../image/logo (1).png'
+import './Header.css'
 
 const Header = () => {
-  const {user,error ,handleSingOut, isLoading ,handleLoginGmailPassword} =useAuth();
-  console.log(user)
+  const {user,error ,handleSingOut, isLoading } =useAuth();
   if(isLoading){
     return  (<div  style={{height:'100vh'}}className='d-flex justify-content-center align-items-center'>
     <Spinner animation="border" variant="danger" />
@@ -15,8 +15,8 @@ const Header = () => {
     
 }
     return (
-        <div>
-             <Navbar  collapseOnSelect expand="lg" bg="primary" variant="dark">
+        <div className='header-area'>
+             <Navbar className="fixed-top"  collapseOnSelect expand="lg" bg="primary" variant="dark">
     <Container>
     <Navbar.Brand href="#home">
       <img src={logo} alt="" /> 
@@ -26,17 +26,19 @@ const Header = () => {
     <Nav className="me-auto">
       <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/home">Home</Nav.Link>
       <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/products">Bikes</Nav.Link>
+      <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/blog">Blogs</Nav.Link>
       <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/contact">Contact</Nav.Link>
      
-      
+   
      
       
     </Nav>
+
     {
       user.email && <p className="text-white m-0">{user?.email}</p>
     }
     {
-      user.email && <Nav.Link style={{fontSize:'18px', color:'#fff'}} as={Link} to="/dashboard">Dashboard</Nav.Link>
+      user.email && <Nav.Link className='headerDashBtn' style={{fontSize:'18px', color:'#fff', }} as={Link} to="/dashboard">Dashboard</Nav.Link>
     }
 
     {

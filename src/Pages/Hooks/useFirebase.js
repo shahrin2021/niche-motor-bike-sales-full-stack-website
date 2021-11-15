@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react"
 import firebaseInitialize from "../Firebase/Firebase.initialize"
-import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword,signOut,onAuthStateChanged ,updateProfile ,getIdToken } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword,signOut,onAuthStateChanged ,updateProfile,signInWithPopup  } from "firebase/auth";
+import { GoogleAuthProvider } from "firebase/auth";
+
+const provider= new GoogleAuthProvider()
+
 
 firebaseInitialize()
 
@@ -9,9 +13,11 @@ const useFirebase= ()=>{
     const [isLoading, setIsLoading] = useState(true);
     const [error , setError]=  useState('');
     const [admin, setAdmin]=useState(false)
-    const [token , setToken] = useState('')
     const auth = getAuth();
+   
 
+   
+ 
     const registerUser = (email, password,name,history)=>{
         createUserWithEmailAndPassword(auth, email, password)
         .then(result=>{
@@ -41,14 +47,27 @@ const useFirebase= ()=>{
 
     };
 
+    
+    const singInWithGoogle=(location, history)=>{
+        signInWithPopup(auth, provider)
+       .then(result=>{
+           setUser(result.user)
+           saveUser(user.eamil, user.displayName,'PUT')
+           
+           const destination= location?.state?.from || '/home';
+           history.replace(destination)
+           setError('')
+       }).catch((error)=>{
+           setError(error.message)
+       }).finally(()=>{
+           setIsLoading(false)
+       })
+    };
+
     useEffect(()=>{
         const unsubscrib= onAuthStateChanged (auth, (user)=>{
             if(user){
-                setUser(user);
-                getIdToken(user)
-                .then(idToken=>{
-                    setToken(idToken)
-                })
+              
             }else{
                 setUser({})
             }
@@ -59,11 +78,11 @@ const useFirebase= ()=>{
 
    
        
-    },[])
+    },[]);
 
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://protected-island-07289.herokuapp.com/users/${user.email}`)
         .then(res=> res.json())
         .then(data=>{
             setAdmin(data.admin)
@@ -88,26 +107,27 @@ const useFirebase= ()=>{
         })
     }
 
-   
-
-    
-
     const handleSingOut =()=>{
         signOut(auth)
         .then(()=>{
 
         }).catch((error)=>{
             setError(error.message)
+            console.log(error)
         })
         .finally(()=>{
             setIsLoading(false)
         })
     };
 
-    const saveUser= (email , displayName )=>{
+    
+
+   
+
+    const saveUser= (email , displayName  )=>{
         const user= {email, displayName};
         console.log(user)
-        fetch('http://localhost:5000/users',{
+        fetch('https://protected-island-07289.herokuapp.com/users',{
             method:'POST', 
             headers:{
                 'content-type': 'application/json'
@@ -121,10 +141,12 @@ const useFirebase= ()=>{
     }
 
 
-    // call all product 
+    
+
+
    
 
-    return {user , token ,error ,admin, isLoading ,handleSingOut ,handleLoginGmailPassword,registerUser}
+    return {user,singInWithGoogle,error ,admin, isLoading, handleSingOut ,handleLoginGmailPassword,registerUser}
 
 }
 

@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    
 }
 .banner-text{
     max-width: 500px;
@@ -22,3 +24,21 @@
     font-size: 16px;
 } 
 
+
+
+@media (max-width:688px) {
+    .banner-text h1{
+        font-size: 40px;
+        color: #ffffff;
+    } 
+
+    .banner-text{
+        max-width:400px;
+        padding:0 7px;
+    }
+
+    .headerDashBtn{
+        margin-bottom: 10px;
+        
+    }
+}
